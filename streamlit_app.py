@@ -22,11 +22,11 @@ if add_selectbox == 'Write Something':
     title = st.text_input("What's it about 📚")
     name = st.text_input("What do we call you 👀")
     Emp_ID = st.text_input("Your unique identifer , employee id , duh!! 👷")
-    url = st.text_input("Anywhere else we can visit🔖")
+    url = st.text_input("Anywhere else we can visit 🔖 if you dont have any url to share , please enter NA.")
     analysis = st.text_input("Cant wait to hear your thoughts ✍ ")
-
-    if not url:
-        st.warning('if you dont have any url to share , please enter NA.')
+#
+#    if not url:
+#        st.warning('if you dont have any url to share , please enter NA.')
     submit = st.button("Submit 🚩")
 
     # Once the user has submitted, upload it to the database
