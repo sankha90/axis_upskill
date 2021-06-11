@@ -22,7 +22,7 @@ if add_selectbox == 'Write Something':
     title = st.text_input("What's it about 📚")
     name = st.text_input("What do we call you 👀")
     Emp_ID = st.text_input("Your unique identifer , employee id , duh!! 👷")
-    url = st.text_input("Anywhere else we can visit 📎")
+    url = st.text_input("Anywhere else we can visit🔖")
     analysis = st.text_input("Cant wait to hear your thoughts ✍ ")
 
     if not url:
