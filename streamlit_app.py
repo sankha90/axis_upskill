@@ -9,7 +9,7 @@ import json
 
 db = firestore.Client.from_service_account_json("firestore-key.json")
 
-st.markdown("<h1 style='text-align: center; color: black;'>Axis Tech<Know/> Transfer 💻</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>Axis Tech<Know> Transfer 💻</h1>", unsafe_allow_html=True)
 
 # You can use a column just like st.sidebar:
 add_selectbox = st.sidebar.selectbox(
