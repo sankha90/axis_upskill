@@ -47,7 +47,7 @@ if add_selectbox == "Read Something":
     for doc in blg_ref.stream():
         t2 = doc.to_dict()
         st.write(t2['Name'])
-        with st.beta_expander("see the analysis"):
+        with st.beta_expander("Expand to see what's behind 🕵️‍♂️"):
             st.write(t2['Analysis'])
         st.write(t2['Emp_ID'])
         st.write(t2['url'])
