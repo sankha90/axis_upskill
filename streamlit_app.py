@@ -7,7 +7,7 @@ import json
 #db = firestore.Client(credentials=creds, project="axis_upskill")
 
 
-db = firestore.Client.from_service_account_json("C://Users//subhr//axis_upskill//firestore-key.json")
+db = firestore.Client.from_service_account_json("firestore-key.json")
 
 st.markdown("<h1 style='text-align: center; color: black;'>Axis Upskill Program 💻</h1>", unsafe_allow_html=True)
 
