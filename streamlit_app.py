@@ -9,23 +9,24 @@ import json
 
 db = firestore.Client.from_service_account_json("firestore-key.json")
 
-st.markdown("<h1 style='text-align: center; color: black;'>Axis Upskill Program 💻</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>Axis Tech-Know Transfer 💻</h1>", unsafe_allow_html=True)
 
 # You can use a column just like st.sidebar:
 add_selectbox = st.sidebar.selectbox(
     "What are you planning to do today?",
-    ("Post Something", "Read Analysis")
+    ("Write Something", "Read Something")
 )
 
-if add_selectbox == 'Post Something':
+if add_selectbox == 'Write Something':
     # Streamlit widgets to let a user create a new post
-    title = st.text_input("Post title 📚")
-    name = st.text_input("Name 👀")
-    Emp_ID = st.text_input("Employee ID 👷")
-    analysis = st.text_input("Analysis ✍ ")
-    url = st.text_input("Post url if any 📎")
+    title = st.text_input("What's it about 📚")
+    name = st.text_input("What do we call you 👀")
+    Emp_ID = st.text_input("Your unique identifer , employee id , duh!! 👷")
+    url = st.text_input("Anywhere else we can visit 📎")
+    analysis = st.text_input("Cant wait to hear your thoughts ✍ ")
+
     if not url:
-        st.warning('Please input some value , NA if you do not have any url.')
+        st.warning('if you dont have any url to share , please enter NA.')
     submit = st.button("Submit new post 🚩")
 
     # Once the user has submitted, upload it to the database
@@ -39,7 +40,7 @@ if add_selectbox == 'Post Something':
 		    "url": url
 	    })
 
-if add_selectbox == "Read Analysis":
+if add_selectbox == "Read Something":
     blg_ref = db.collection("posts")
 
 # For a reference to a collection, we use .stream() instead of .get()
