@@ -27,7 +27,7 @@ if add_selectbox == 'Write Something':
 
     if not url:
         st.warning('if you dont have any url to share , please enter NA.')
-    submit = st.button("Submit new post 🚩")
+    submit = st.button("Submit 🚩")
 
     # Once the user has submitted, upload it to the database
     if title and name and Emp_ID and analysis and url and submit:
