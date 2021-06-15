@@ -12,10 +12,17 @@ db = firestore.Client.from_service_account_json("firestore-key.json")
 st.markdown("<h1 style='text-align: center; color: black;'>Axis Tech-Know Transfer 💻</h1>", unsafe_allow_html=True)
 
 # You can use a column just like st.sidebar:
+
+
 add_selectbox = st.sidebar.selectbox(
     "What are you planning to do today?",
     ("Write Something", "Read Something")
 )
+
+st.sidebar.markdown('[![Saiteja Kura]\
+                    (https://img.shields.io/badge/Made%20with-Python-red)]\
+                    (https://python.org)')
+
 
 if add_selectbox == 'Write Something':
     # Streamlit widgets to let a user create a new post
