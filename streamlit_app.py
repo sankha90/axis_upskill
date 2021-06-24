@@ -65,5 +65,5 @@ if add_selectbox == "Read Something":
             st.write(t2['Analysis'])
         st.write(t2['Emp_ID'])
         st.write(t2['url'])
-        post = st.button("Submit your comment 🚩", key= count)
+        #post = st.button("Submit your comment 🚩", key= count)
         st.markdown("---")
