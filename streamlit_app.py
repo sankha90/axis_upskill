@@ -12,11 +12,7 @@ from annotated_text import annotated_text
 db = firestore.Client.from_service_account_json("firestore-key.json")
 
 
-annotated_text(
-    ("Axis", "#8ef"),
-    " Tech - Know Transfer 💻 ",
-    )
-#st.markdown("<h1 style='text-align: center; color: black;'>Axis Tech-Know Transfer 💻</h1>" ,unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>Axis Tech-Know Transfer 💻</h1>" ,unsafe_allow_html=True)
 
 # You can use a column just like st.sidebar:
 
@@ -60,7 +56,7 @@ if add_selectbox == "Read Something":
 # For a reference to a collection, we use .stream() instead of .get()
     for doc in blg_ref.stream():
         t2 = doc.to_dict()
-        st.write(t2['Name'])
+        st.write(t2['**Name**'])
         with st.beta_expander("Expand to see what's beyond 🕵️‍♂️"):
             st.write(t2['Analysis'])
         st.write(t2['Emp_ID'])
