@@ -56,6 +56,7 @@ if add_selectbox == "Read Something":
 # For a reference to a collection, we use .stream() instead of .get()
     for doc in blg_ref.stream():
         t2 = doc.to_dict()
+	st.write(t2['title'])
         st.write(t2['Name'])
         with st.beta_expander("Expand to see what's beyond 🕵️‍♂️"):
             st.write(t2['Analysis'])
