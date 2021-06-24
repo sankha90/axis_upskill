@@ -55,11 +55,15 @@ if add_selectbox == "Read Something":
 
 # For a reference to a collection, we use .stream() instead of .get()
     for doc in blg_ref.stream():
+        #count = 0
         t2 = doc.to_dict()
-	st.write(t2['title'])
+        #count = len(t2['Analysis'])
+        #print(count)
+        st.write(t2['title'])
         st.write(t2['Name'])
         with st.beta_expander("Expand to see what's beyond 🕵️‍♂️"):
             st.write(t2['Analysis'])
         st.write(t2['Emp_ID'])
         st.write(t2['url'])
+        post = st.button("Submit your comment 🚩", key= count)
         st.markdown("---")
