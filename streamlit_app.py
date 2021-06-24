@@ -11,7 +11,21 @@ from annotated_text import annotated_text
 
 db = firestore.Client.from_service_account_json("firestore-key.json")
 
-st.markdown("<h1 style='text-align: center; color: black;'>Axis Tech-Know Transfer 💻</h1>" ,unsafe_allow_html=True)
+
+annotated_text(
+    "This ",
+    ("is", "verb", "#8ef"),
+    " some ",
+    ("annotated", "adj", "#faa"),
+    ("text", "noun", "#afa"),
+    " for those of ",
+    ("you", "pronoun", "#fea"),
+    " who ",
+    ("like", "verb", "#8ef"),
+    " this sort of ",
+    ("thing", "noun", "#afa"),
+)
+#st.markdown("<h1 style='text-align: center; color: black;'>Axis Tech-Know Transfer 💻</h1>" ,unsafe_allow_html=True)
 
 # You can use a column just like st.sidebar:
 
