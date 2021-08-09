@@ -61,7 +61,7 @@ if add_selectbox == "Read Something":
         #print(count)
         st.write(t2['title'])
         st.write(t2['Name'])
-        with st.beta_expander("Expand to see what's beyond 🕵️‍♂️"):
+        with st.expander("Expand to see what's beyond 🕵️‍♂️"):
             st.write(t2['Analysis'])
         st.write(t2['Emp_ID'])
         st.write(t2['url'])
